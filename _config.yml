@@ -34,12 +34,22 @@ page_layout: article
 # Format titles with titlecase?
 titlecase: true
 
+# Collections
+collections:
+  habits:
+    output: true
+    permalink: /:collection/:path/
+    title: Habit Templates
+  paths:
+    output: true
+    permalink: /:collection/:path/
+    title: Paths
 
 # Site owner
-owner: Habitry
-  name:
-  email: hello@habitry.com
-  twitter: @habitry
+owner: 
+  name: 
+  email: 
+  twitter: 
   google:
     ad-client:
     ad-slot:
@@ -49,3 +59,6 @@ owner: Habitry
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+
+include:
+  - _pages

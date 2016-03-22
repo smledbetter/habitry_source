@@ -21,6 +21,8 @@
     <meta http-equiv="cleartype" content="on">
 
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+	{% if page.inline_comments %}<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/inlineDisqussions.css" />{% endif %}
+	
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
@@ -39,8 +41,30 @@
       {% include footer.html %}
     </div>
 
-    <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+	<script>
+	$( function() {
+	  // init Isotope
+	  var $grid = $('.grid-items').isotope({
+	    itemSelector: '.grid-item',
+	    layoutMode: 'fitRows'
+	  });
+	  // bind filter on radio button click
+	  $('.filters-button-group').on( 'click', 'input', function() {
+	    var filterValue = $( this ).attr('data-filter');
+	  });
+  
+	});
+</script> 
+	{% if page.inline_comments %}<script src="{{ site.url }}/js/plugins/inlineDisqussions.js"></script>
+	<script>
+	  disqus_shortname = '{{ site.owner.disqus-shortname }}';
+	  jQuery(document).ready(function() {
+	    jQuery("p").inlineDisqussions();
+	  });
+	</script>{% endif %}
 
   </body>
 

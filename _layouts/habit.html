@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		{% if page.image.feature %}
+		<div class="page-feature">
+			<div class="page-image">
+				<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+				{% if page.image.credit %}{% include image-credit.html %}{% endif %}
+			</div><!-- /.page-image -->
+		</div><!-- /.page-feature -->
+		{% endif %}
+		{% include breadcrumbs.html %}
+		<div class="page-title">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				{{ content }}
+				<hr />
+				
+				<div class="habit-metadata">
+					<h4>Level: <span style="font-weight:200;">{{ page.level }}</span></h4>
+					<h4>Skills</h4>
+					<ul class="skillcloud">
+					{% for skills in page.skills %}
+					<li><a>{{ skills }}</a></li>
+					{% endfor %}
+				</ul>
+					<h4>Tags</h4>
+					<ul class="tagcloud">
+					{% for tags in page.tags %}
+					<li><a href="#">{{ tags }}</a></li>
+					{% endfor %}
+				</ul>
+					<div>
+				<footer class="page-footer">
+					{% if page.categories %}{% include page-author.html %}{% endif %}
+					{% if page.share != false %}{% include share-this.html %}{% endif %}
+					{% include page-meta.html %}
+				</footer><!-- /.footer -->
+				<aside>
+					{% if page.comments == true %}{% include comments.html %}{% endif %}
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
+	</article><!-- ./wrap -->
+</div><!-- /#main -->

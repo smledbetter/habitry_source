@@ -1,0 +1,44 @@
+---
+layout: habit
+title: Offer reflections
+date: 2016-03-21T08:35:52-07:00
+modified:
+excerpt: 
+image:
+  feature:
+  teaser:
+  thumb:
+ads: false
+comments: true
+inline_comments: false
+type: action
+tags: 
+skills: [ motivational interviewing, active listening ]
+level: 5
+author: omar
+---
+
+In order to support autonomy and belonging, we're going to practice offer reflections.
+
+### Why
+By offering reflections, you paraphrase back what the client is thinking and feeling. You express your understanding of their thoughts and feelings back to them. Reflections help us bridge the gap between what the client is communicating and the coach hears, and allow coaches to check for their understanding of what was said. 
+
+### How
+Take a guess at how your client is feeling. Then say that.
+
+You might use the following preambles to start your reflections to let your client know you’re about to take a guess.
+
+- It sounds like…
+- I get the sense that…
+- It feels as though…
+- You seem to be saying…
+
+After saying one of those preambles, you could then add the reflection. For example, if you wanted to offer a reflection about a client feeling frustrated, it might look like:
+
+- You seem to be saying… you’re not happy with how you’re handling social events
+
+### When
+To get into the habit of offering reflections, it’s a good idea to figure out a trigger ahead of time for when you’ll make them. That way you’ll remember to offer them.
+
+What specific situation do you want to offer reflections? For example, you could offer a reflection after a client answers an OEQ. Other situations you may want to offer reflections include when you hear clients express frustration, or when they express reasons to change. 
+

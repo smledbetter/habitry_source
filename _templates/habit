@@ -1,0 +1,19 @@
+---
+layout: habit
+title: {{ title }}
+date: {{ date }}
+modified:
+excerpt: 
+image:
+  feature:
+  teaser:
+  thumb:
+ads: false
+comments: true
+inline_comments: false
+type: 
+tags: 
+skills: 
+level: 
+author: 
+---
